@@ -10,7 +10,7 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/deposit_service_database
     username: postgres
-    password: root
+    password: bektur97@
     driver-class-name: org.postgresql.Driver
 
   rabbitmq:

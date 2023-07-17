@@ -1,33 +1,3 @@
-//package com.javastart.account.controller;
-//
-//import com.javastart.account.dto.AccountRequestDTO;
-//import com.javastart.account.dto.AccountResponseDTO;
-//import com.javastart.account.entity.Account;
-//import com.javastart.account.service.AccountService;
-//import lombok.AllArgsConstructor;
-//import org.springframework.web.bind.annotation.*;
-//
-//@RestController
-//@AllArgsConstructor
-//public class AccountController {
-//    private final AccountService accountService;
-//    @GetMapping("/accountId")
-//    public AccountResponseDTO getAccounts(@PathVariable("accountId") Long accountId){
-//        return new AccountResponseDTO( accountService.getAccountById(accountId));
-//    }
-//    @PostMapping("/")
-//    public Account createAccount(@RequestBody AccountRequestDTO a){
-//        return (Account) accountService.createAccount(a.getName(),a.getEmail(),a.getPhone());
-//    }
-//    @PutMapping("/accountId")
-//    public AccountResponseDTO updateAccount(@PathVariable Long accountId, @RequestBody AccountRequestDTO a){
-//        Account account=accountService.updateAccount(accountId,a.getName(),a.getEmail(),a.getPhone());
-//        return null;
-//    }
-//    @DeleteMapping
-//    public A
-//
-//}
 package com.javastart.account.controller;
 
 import com.javastart.account.dto.AccountResponseDTO;
@@ -36,6 +6,7 @@ import com.javastart.account.entity.Account;
 import com.javastart.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+//import jakarta.persistence.*;
 
 @RestController
 public class AccountController {
