@@ -2,16 +2,19 @@ spring:
   jpa:
     database: POSTGRESQL
     properties.hibernate.temp.use_jdbc_metadata_defaults: false
+
     hibernate:
       ddl-auto: create
     properties:
+
 
   datasource:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/deposit_service_database
     username: postgres
-    password: bektur97@
+    password: root
     driver-class-name: org.postgresql.Driver
+
 
   rabbitmq:
     port: 5672
@@ -21,5 +24,11 @@ spring:
     listener:
       direct:
         default-requeue-rejected: true
+logging:
+  level:
+    com:
+      netflix:
+        eureka=DEBUG:
 server:
   port: 9999
+
