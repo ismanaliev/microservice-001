@@ -9,9 +9,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
-group 'com.javastart'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '1.8'
 
 repositories {
     mavenCentral()
@@ -23,8 +21,8 @@ ext {
 
 dependencies {
     implementation "org.springframework.boot:spring-boot-starter-web:2.3.2.RELEASE"
-//    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
-//    implementation "org.springframework.cloud:spring-cloud-starter-config"
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
+    implementation "org.springframework.cloud:spring-cloud-starter-config"
     testImplementation "junit:junit:4.1"
 }
 

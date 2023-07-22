@@ -1,9 +1,14 @@
 spring:
   application:
     name: account-service
+#    eureka:
+#      client:
+#        service-url:
+#          defaultZone: http://localhost:8761/eureka/
   cloud:
     config:
       uri: http://localhost:8001
       fail-fast: true
       password: admin
       username: user
+

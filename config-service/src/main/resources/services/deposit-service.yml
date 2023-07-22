@@ -24,11 +24,7 @@ spring:
     listener:
       direct:
         default-requeue-rejected: true
-logging:
-  level:
-    com:
-      netflix:
-        eureka=DEBUG:
+
 server:
   port: 9999
 

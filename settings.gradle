@@ -1,0 +1,8 @@
+rootProject.name = 'microservices'
+include 'account-service'
+include 'bill-service'
+include 'deposit-service'
+include 'notification-service'
+include 'config-service'
+include 'gateway'
+include 'registry'
