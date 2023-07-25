@@ -11,7 +11,7 @@ public class ConfigApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConfigApplication.class, args);
         System.out.println("");
-        System.out.println("ConfigApplication runed!!!");
+        System.out.println("ConfigApplication runned!!!");
     }
 
 }
